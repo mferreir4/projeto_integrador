@@ -1,2 +1,2 @@
 # projeto_integrador
-Projeto Integrador do Curso de Desenvolvimento de Sistemas
+Projeto Integrador do Curso de Desenvolvimento Software Multiplataforma
