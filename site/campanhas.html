@@ -7,80 +7,163 @@
     <title>super V</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
 </head>
+<style>
+    img {
+        width: 100%;
+        height: 100%;
+    }
 
+    .navbar-brand {
+        width: 150px;
+        height: 100%;
+    }
+
+    body {
+        background-color: #a3deeb;
+    }
+
+</style>
 <header>
-    <object data="head.html"></object>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">ImuniBrasil</a>
+            <a class="navbar-brand" href="index.html"><img src="../imagens/Page1.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Vacinas</a>
+                        <a class="nav-link active text-primary-emphasis" aria-current="page"
+                            href="vacinas.html">Vacinas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">carteira </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link active text-primary-emphasis" href="carterinha.html">carteira </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-disabled="true">cadastro</a>
+                        <a class="nav-link active text-primary-emphasis" href="campanhas.html">campanhas </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary-emphasis" href="cadastro.html">cadastro </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
         </div>
+    </nav>
 </header>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus debitis, in autem non
-                    commodi
-                    obcaecati soluta molestias maxime distinctio error, voluptas consequuntur assumenda consequatur
-                    necessitatibus
-                    enim ex at facilis.</h3>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus debitis, in autem non
-                    commodi
-                    obcaecati soluta molestias maxime distinctio error, voluptas consequuntur assumenda consequatur
-                    necessitatibus
-                    enim ex at facilis.</h3>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
             <div class="col">
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatibus debitis, in autem non
-                    commodi
-                    obcaecati soluta molestias maxime distinctio error, voluptas consequuntur assumenda consequatur
-                    necessitatibus
-                    enim ex at facilis.</h3>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmonteazul.mg.gov.br%2Fwp-content%2Fuploads%2F2021%2F04%2FWhatsApp-Image-2021-04-12-at-14.54.53.jpeg&f=1&nofb=1&ipt=249f174876642e687770813490f3ccac1902a2f88e39ea60ef8438ae2e7c666e&ipo=images" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">influenza</h5>
+                        <p class="card-text">Some quick example text to build on the influenza and make up the bulk of the
+                            card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div w3-include-html="content.html">
-        <html-include src="my-html.html"></html-include>
+        
     </div>
 </body>
 <footer>

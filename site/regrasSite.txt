@@ -1,0 +1,19 @@
+paleta de cores
+#57b784
+#3173b6
+#cff5e0
+#caf2e3
+#3bdc91
+#54d57d
+#87c8e8
+#ededed
+#a3deeb
+
+fontes
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+ Roboto
+
+Designed by Christian Robertson 
+
