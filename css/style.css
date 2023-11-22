@@ -40,9 +40,24 @@ img {
     background-color: #87c8e8;
   }
 
-  body {
-    background-color: #ededed;
+  body{
+    background-image: linear-gradient(
+      to right,
+      #bcf8dc,
+      #dcfaed,
+      #d7f1f7,
+      #cfe4ee,
+      #add6ff,
+      #3173B6
+    )
   }
+
+  .borda{
+    border:solid;
+    padding: 20px;
+    margin: 2% ;
+    border-color:rgb(0, 0, 0);
+}
 
   .color8 {
     background-color: #a3deeb;
@@ -55,8 +70,10 @@ img {
 
   .sizeImg1{
     
-    width: 768px;
-    height: 354px;
+    width: 700px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
   }
   footer{
     display: flex;
@@ -68,3 +85,10 @@ img {
     text-align: center;
     align-items: center;
   }
+
+  .centro{
+    align-items: center;
+    text-align: justify;
+}
+
+  
