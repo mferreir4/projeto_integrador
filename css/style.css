@@ -9,7 +9,7 @@ img {
   }
 
   .carrosel {
-    height: 100%;
+    
   }
 
   .color {
@@ -46,4 +46,25 @@ img {
 
   .color8 {
     background-color: #a3deeb;
+  }
+
+  .sizeLogo{
+    width: 220px;
+    height: 100px;
+  }
+
+  .sizeImg1{
+    
+    width: 768px;
+    height: 354px;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1{
+    text-align: center;
+    align-items: center;
   }
