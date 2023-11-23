@@ -14,41 +14,42 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
     rel="stylesheet">
 </head>
-
 <header>
   <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand sizeLogo" href="index.html"><img src="../imagens/Page1.png" alt=""></a>
-      <!--  retirar o v da logo
-            deixar o imunibrasil
-            e deixar o super v como personagem
-            em outra pagina
-            deixar a logo maior e deslocar os btn mais para a direita
-            colocar um hover -->
+      <a class="navbar-brand sizeLogo espacoLeft" href="index.html"><img src="../imagens/logo_new2.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item espaco " id="btn_navbarV" onmouseout="normal()" onmousemove="moveV()">
             <a class="nav-link active text-primary-emphasis" aria-current="page" href="vacinas.html">Vacinas</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item espaco " id="btn_navbarCr" onmouseout="normal()" onmousemove="moveCr()">
             <a class="nav-link active text-primary-emphasis" href="carterinha.html">Carteira </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item espaco " id="btn_navbarCm" onmouseout="normal()" onmousemove="moveCm()">
             <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
             <a class="nav-link active text-primary-emphasis" href="cadastro.html">Cadastro </a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
+            <a class="nav-link active text-primary-emphasis" href="mascote.html">Mascote </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-          <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+          <button class="btn btn-outline-light" type="submit">Pesquisar</button>
         </form>
       </div>
+    </div>
+    <div class="user">
+      <a class="navbar-brand" href="../HTML/login.html">
+        <img class="user_login" id="login" src="../imagens/pessoa.png" alt="Bootstrap" width="30" height="24">
+      </a>
     </div>
   </nav>
 </header>
@@ -67,5 +68,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-
+  <script src="../js/index.js"></script>
 </html>
