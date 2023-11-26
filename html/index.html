@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super V</title>
+  <title>Imuni Brasil</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,8 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
     rel="stylesheet">
 </head>
-
 <header>
-  <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg">
+  <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand sizeLogo espacoLeft" href="index.html"><img src="../imagens/logo_new2.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -38,7 +37,7 @@
             <a class="nav-link active text-primary-emphasis" href="cadastro.html">Cadastro </a>
           </li>
           <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
-            <a class="nav-link active text-primary-emphasis" href="mascote.html">Mascote </a>
+            <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -56,8 +55,49 @@
 </header>
 
 <body>
-  <div class="container p-5">
+<div class="container-fluid principal">
+  <div class="row p-1">
+    <div class="col-3">
+            <img class="mascote mascoteSize" src="../imagens/mascote.png">
+    </div>
+    <div class="col-4 borda2">
+      <h1><u>Sejam Bem-Vindos!</u></h1>
+      <br>
+      <p>O Imuni Brasil é um projeto criado para conscientizar e orientar a população sobre a importância da vacinação.<br>
+      Aqui todos serão atualizados sobre novas campanhas disponíveis em sua região, 
+        detalhes e informações de cada vacina e, por fim, consultas para saber todas as vacinas obrigatórias que deveriam ter sido aplicadas.
+      <p>Para saber mais, <a href="/html/mascote.html">clique aqui!</a></p>
+    </div> 
+    <div class="col-3 borda textConsul">
+      <h1>Consulta Rápida</h1>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite aqui">
+          </div>
+          <div class="mb-3">
+            <label for="Gênero">Gênero</label>
+            <select id="genero" class="form-control">
+              <option>Selecione...</option>
+              <option>Masculino</option>
+              <option>Feminino</option>
+              <option>Prefiro não dizer</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Idade</label>
+            <input type="text" class="form-control" id="idade" placeholder="Somente números">
+            <div id="" class="form-text">Informações para consulta de vacinas obrigatórias na carteira de vacinação.
+            </div>
+          </div>
+        </form>
+        <button class="btn btn-success" onclick="consulta()">Consultar</button>
+    </div>
+  </div>
+</div>
+<div class="container-sm principal">
     <div class="row">
+      <h1>CAMPANHAS ATUAIS</h1>
       <div class="carrosel">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -85,7 +125,7 @@
             <div class="carousel-item">
               <img
                 src="../imagens/img_portal_movimento-pela-vacinacao.png"
-                class="d-block w-100" alt="...">
+                class="d-block w-10" alt="...">
               <div class="carousel-caption d-none d-md-block " style="color: black;"> 
               </div>
             </div>
@@ -103,42 +143,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        
-      </div>
-      <div class="col borda" >
-        <h1>Consulta Rápida</h1>
-        <form>
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome">
-          </div>
-          <div class="mb-3">
-            <label for="Gênero">Gênero</label>
-            <select id="genero" class="form-control">
-              <option>Escolher...</option>
-              <option>Masculino</option>
-              <option>Feminino</option>
-              <option>Prefiro não dizer</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Idade</label>
-            <input type="text" class="form-control" id="idade">
-            <div id="" class="form-text">Informações para consulta de vacinas obrigatórias na carteira de vacinação.
-            </div>
-          </div>
-        </form>
-        <button class="btn btn-primary" onclick="consulta()">Consultar</button>
-      </div>
-      <div class="col">
-
-      </div>
-    </div>
-  </div>
-  <div w3-include-html="content.html">
-    <html-include src="my-html.html"></html-include>
   </div>
 </body>
 <footer>
