@@ -34,10 +34,10 @@
             <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
           </li>
           <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
-            <a class="nav-link active text-primary-emphasis" href="cadastro.html">Cadastro </a>
+            <a class="nav-link active text-primary-emphasis" href="login.html">Login/Cadastro</a>
           </li>
           <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
-            <a class="nav-link active text-primary-emphasis" href="mascote.html">Mascote </a>
+            <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -55,60 +55,41 @@
 </header>
 
 <body>
-    <div class="container espacoTop">
-        <form action="">
-            <div class="row">
-                <div class="col">
-            
-                </div>
-                <div class="col">
-                    <label for="" class="form-label">email</label>
-                    <input required type="text" class="form-control" id="email">
-                </div>
-                <div class="col">
-            
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-            
-                </div>
-                <div class="col">
-                    <label for="" class="form-label">senha</label>
-                    <input required type="password" class="form-control" id="senha">
-                </div>
-                <div class="col">
-            
-                </div>
-            </div>
-        </form>
-        <div class="row">
-            <div class="col">
-
-            </div>
-            <div class="col ">
-                <button type="button" class="btn w-75 m-5 btn-outline-primary" onclick="login()">login</button>
-
-            </div>
-            <div class="col ">
-                <a href="../HTML/cadastro.html"><button type="button" class="btn w-75 m-5 btn-outline-info" >cadastrar</button></a>
-            
-            </div>
-            <div class="col">
-
-            </div>
+    <div class="container">
+      <div class="row centro">
+        <div class="col-7 sizeLogoLogin centro">
+          <img src="../imagens/logo_new2.png">
         </div>
-        <div class="row">
-            <div class="col">
-
+      </div>
+            <form>
+              <div class="row centro">
+                <div class="col-7 textConsul">
+                    <div class="row">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="email" class="form-label">E-mail</label>
+                          <input type="email" class="form-control" required id="email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row centro">
+                      <div class="col">
+                        <div class="mb-3">
+                          <label for="senha" class="form-label">Senha</label>
+                          <input type="password" class="form-control" required id="senha">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                          <button type="button" class="btn w-100 m-2 btn-outline-primary" onclick="login()">Login</button>
+                      </div>
+                      <div class="col">
+                          <a href="../HTML/cadastro.html"><button type="button" class="btn w-100 m-2 btn-outline-info">Cadastrar</button></a>
+                      </div>
+                    </div>
+              </form>
             </div>
-            <div class="col">
-                <div class="col align-self-center " id="info"></div>
-            </div>
-            <div class="col">
-
-            </div>
-        </div>
     </div>
 </body>
 

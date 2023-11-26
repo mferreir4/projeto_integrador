@@ -59,6 +59,9 @@ img {
     width: 220px;
     height: 100px;
   }
+  .sizeLogoLogin{
+    height: 350px;
+  }
   footer{
     display: flex;
     justify-content: center;
@@ -73,7 +76,7 @@ img {
   }
 
   .centro{
-    display: flex;
+      display: flex;
       justify-content: center;
       align-items: center;
   }
