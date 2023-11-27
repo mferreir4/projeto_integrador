@@ -1,6 +1,7 @@
 function vacinas() {
     let dados = [{
         "id": 1,
+        "sexo":"Ambos",
         "idade": "Ao nascer",
         "vacina": "BCG (Bacilo Calmette-Guérin)",
         "objetivo": "Proteção contra a tuberculose, principalmente a forma grave em crianças."
@@ -8,6 +9,7 @@ function vacinas() {
 
     {
         "id": 2,
+        "sexo":"Ambos",
         "idade": "Ao nascer, 2 meses e 6 meses",
         "vacina": "Hepatite B ",
         "objetivo": "Prevenir a infecção pelo vírus da hepatite B."
@@ -16,6 +18,7 @@ function vacinas() {
 
     {
         "id": 3,
+        "sexo":"Ambos",
         "idade": "2, 4 e 6 meses",
         "vacina": "Pentavalente (DTP-Hib-HBV)",
         "objetivo": "Proteção contra difteria, tétano, coqueluche, meningite e hepatite B."
@@ -23,12 +26,14 @@ function vacinas() {
 
     {
         "id": 4,
+        "sexo":"Ambos",
         "idade": " 2, 4 e 6 meses",
         "vacina": "VIP/VOP (Vacina Inativada e Vacina Oral Poliomielite)",
         "objetivo": "Prevenção da poliomielite (paralisia infantil)"
     },
     {
         "id": 5,
+        "sexo":"Ambos",
         "idade": "4 anos (reforco)",
         "vacina": "VIP/VOP (Vacina Inativada e Vacina Oral Poliomielite)",
         "objetivo": "Prevenção da poliomielite (paralisia infantil)"
@@ -36,6 +41,7 @@ function vacinas() {
 
     {
         "id": 6,
+        "sexo":"Ambos",
         "idade": "2, 4 e 6 meses; reforço aos 12 e 15 meses",
         "vacina": "Pneumocócica Conjugada 10-Valente",
         "objetivo": "Prevenir doenças causadas pela bactéria Streptococcus pneumoniae, como pneumonia e meningite"
@@ -43,6 +49,7 @@ function vacinas() {
 
     {
         "id": 7,
+        "sexo":"Ambos",
         "idade": "3, 5 e 12 meses",
         "vacina": "Meningocócica C Conjugada",
         "objetivo": "Proteção contra a meningite causada pelo sorotipo C da bactéria Neisseria meningitidis."
@@ -50,6 +57,7 @@ function vacinas() {
 
     {
         "id": 8,
+        "sexo":"Ambos",
         "idade": " reforço aos 12 anos",
         "vacina": "Meningocócica C Conjugada",
         "objetivo": "Proteção contra a meningite causada pelo sorotipo C da bactéria Neisseria meningitidis."
@@ -57,6 +65,7 @@ function vacinas() {
 
     {
         "id": 9,
+        "sexo":"Ambos",
         "idade": "2 e 4 meses",
         "vacina": "Rotavírus Humano",
         "objetivo": "Prevenir infecções por rotavírus, uma das principais causas de diarreia grave em crianças."
@@ -64,12 +73,28 @@ function vacinas() {
 
     {
         "id": 10,
+        "sexo":"Ambos",
         "idade": "9 meses",
         "vacina": "Febre Amarela",
         "objetivo": "Proteção contra a febre amarela, uma doença viral transmitida por mosquitos."
     },
+        {
+            "id": 11,
+            "sexo": "Meninas",
+            "idade": "9 a 14 anos",
+            "vacina": "HPV (Papilomavírus Humano)",
+            "objetivo": "Prevenção de infecções por HPV, que podem levar a cânceres."
+        },
+        {
+            "id": 11,
+            "sexo": "meninos ",
+            "idade": " 11 a 14 anos",
+            "vacina": "HPV (Papilomavírus Humano)",
+            "objetivo": "Prevenção de infecções por HPV, que podem levar a cânceres."
+        },
     {
-        "id": 11,
+        "id": 12,
+        "sexo":"Ambos",
         "idade": "reforço aos 4 anos",
         "vacina": "Febre Amarela",
         "objetivo": "Proteção contra a febre amarela, uma doença viral transmitida por mosquitos."
@@ -88,6 +113,7 @@ function exibe() {
                         <table class="table">
                         <thead>
                             <tr>
+                            <th scope="col">sexo</th>
                             <th scope="col">idade</th>
                             <th scope="col">vacina</th>
                             <th scope="col">objetivo</th>
@@ -95,6 +121,7 @@ function exibe() {
                         </thead>
                         <tbody>
                             <tr>
+                            <th >${dados[i].sexo}</th>
                             <th >${dados[i].idade}</th>
                             <td>${dados[i].vacina} </td>
                             <th >${dados[i].objetivo}</th>

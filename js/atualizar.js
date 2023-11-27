@@ -52,7 +52,7 @@ function novo() {
         document.querySelector('#senha').value = "";
         document.querySelector('#senha_conf').value = "";
 
-        window.location.href = "../HTML/profile.html"
+        //window.location.href = "../HTML/profile.html"
 
 
     }
