@@ -104,6 +104,10 @@ h1{
   font-style: oblique;
 }
 
+.SizeFont{
+  font-size: 20px;
+}
+
 .row-form {
   position: relative;
   left: -4px;

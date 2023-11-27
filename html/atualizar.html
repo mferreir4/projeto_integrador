@@ -2,140 +2,122 @@
 <html lang="PT-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super V</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imuni Brasil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel ="stylesheet" href="../css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
 </head>
 <header>
-    <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand sizeLogo espacoLeft" href="index.html"><img src="../imagens/logo_new2.png"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " required id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item espaco " required id="btn_navbarV" onmouseout="normal()" onmousemove="moveV()">
-                        <a class="nav-link active text-primary-emphasis" aria-current="page"
-                            href="vacinas.html">Vacinas</a>
-                    </li>
-                    <li class="nav-item espaco " required id="btn_navbarCr" onmouseout="normal()"
-                        onmousemove="moveCr()">
-                        <a class="nav-link active text-primary-emphasis" href="carterinha.html">Carteira </a>
-                    </li>
-                    <li class="nav-item espaco " required id="btn_navbarCm" onmouseout="normal()"
-                        onmousemove="moveCm()">
-                        <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
-                    </li>
-                    <li class="nav-item espaco " required id="btn_navbarCa" onmouseout="normal()"
-                        onmousemove="moveCa()">
-                        <a class="nav-link active text-primary-emphasis" href="cadastro.html">Cadastro </a>
-                    </li>
-                    <li class="nav-item espaco " required id="btn_navbarMa" onmouseout="normal()"
-                        onmousemove="moveMa()">
-                        <a class="nav-link active text-primary-emphasis" href="mascote.html">Mascote </a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    c
-                </form>
-            </div>
-        </div>
-        <div class="user">
-            <a class="navbar-brand" href="../HTML/login.html">
-                <img class="user_login" required id="login" src="../imagens/pessoa.png" alt="Bootstrap" width="30"
-                    height="24">
-            </a>
-        </div>
-    </nav>
+  <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand sizeLogo espacoLeft" href="index.html"><img src="../imagens/logo_new2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item espaco " id="btn_navbarV" onmouseout="normal()" onmousemove="moveV()">
+            <a class="nav-link active text-primary-emphasis" aria-current="page" href="vacinas.html">Vacinas</a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarCr" onmouseout="normal()" onmousemove="moveCr()">
+            <a class="nav-link active text-primary-emphasis" href="carterinha.html">Carteira </a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarCm" onmouseout="normal()" onmousemove="moveCm()">
+            <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
+            <a class="nav-link active text-primary-emphasis" href="login.html">Login/Cadastro</a>
+          </li>
+          <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
+            <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+    <div class="user">
+      <a class="navbar-brand" href="../HTML/login.html">
+        <img class="user_login" id="login" src="../imagens/pessoa.png" alt="Bootstrap" width="30" height="24">
+      </a>
+    </div>
+  </nav>
 </header>
 
 <body onload="atualizar()">
+    <div class="container p-5">
+        <div class="row p-1">
+          <div class="col centro borda2">
+            <h1><u>Atualize seus dados</u></h1>
+          </div>
     <form>
         <div class="row">
-            <div class="col"></div>
-            <div class="col borda m-5">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" required id="nome">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col pt-2">
-                            <div class="mb-3">
-                                <label for="" class="form-label">RG</label>
-                                <input type="number" class="form-control" required id="rg">
-                            </div>
-                        </div>
-                        <div class="col pt-2">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Data De Nascimento</label>
-                                <input type="date" class="form-control" required id="dt_nasc">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" required id="email">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Endereco</label>
-                                <input type="text" class="form-control" required id="endereco">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="senha" class="form-label">Senha</label>
-                                <input type="password" class="form-control" required id="senha">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Confirme a Senha</label>
-                                <input type="password" class="form-control" required id="senha_conf">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-outline-info" onclick="novo()" type="submit">Enviar</button>
-                </form>
-            </div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col">
-
-            </div>
-            <div class="col">
-                <div class="col align-self-center " required id="info"></div>
-            </div>
-            <div class="col">
-
-            </div>
-        </div>
-
-    </form>
+          <div class="col"></div>
+          <div class="col-09 borda textConsul">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-2">
+                    <label for="" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" required id="nome">
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col pt-2">
+                  <div class="mb-3">
+                    <label for="" class="form-label">RG</label>
+                    <input type="text" class="form-control" required id="rg">
+                  </div>
+                </div>
+                <div class="col pt-2">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Data De Nascimento</label>
+                    <input type="date" class="form-control" required id="dt_nasc">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" required id="email">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Endereco</label>
+                    <input type="text" class="form-control" required id="endereco">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" class="form-control" required id="senha">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Confirme a Senha</label>
+                    <input type="password" class="form-control" required id="senha_conf">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-outline-info" onclick="cadastrar()" type="submit">Atualizar</button>
+        </form>
+    </div>
 </body>
 <footer>
     <p>&copy; Imuni Brasil Projeto Integrador 2023.</p>
