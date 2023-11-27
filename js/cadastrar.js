@@ -1,4 +1,3 @@
-
 function cadastrar() {
     var nome = document.querySelector('#nome').value;
     var email = document.querySelector('#email').value;
@@ -7,28 +6,27 @@ function cadastrar() {
     var dt_nasc = document.querySelector('#dt_nasc').value;
     var senha = document.querySelector('#senha').value;
     var senha_conf = document.querySelector('#senha_conf').value;
-    
-    if (email == null || senha == null) {
 
+    if (email == null || senha == null) {
     }
-    if(senha != senha_conf){
-        let info = document.getElementById("info")
-        info.innerHTML += `<h2>senhas diferentes</h2>`
+    if (senha != senha_conf) {
+        let info = document.getElementById("info");
+        info.innerHTML += `<h2>senhas diferentes</h2>`;
     }
     if (sessionStorage.email == email) {
-        let info = document.getElementById("info")
-        info.innerHTML += `<h2>usuario ou email nao disponiveis</h2>`
+        let info = document.getElementById("info");
+        info.innerHTML += `<h2>usuario ou email nao disponiveis</h2>`;
     }
-    else{
-        sessionStorage.nome = nome
-        sessionStorage.email = email
-        sessionStorage.endereco = endereco
-        sessionStorage.rg = rg
-        sessionStorage.dt_nasc = dt_nasc
-        sessionStorage.senha = senha
+    else {
+        sessionStorage.nome = nome;
+        sessionStorage.email = email;
+        sessionStorage.endereco = endereco;
+        sessionStorage.rg = rg;
+        sessionStorage.dt_nasc = dt_nasc;
+        sessionStorage.senha = senha;
 
-        let info = document.getElementById("info")
-        info.innerHTML += `<h2>cadastro bem sucedido</h2>`
+        let info = document.getElementById("info");
+        info.innerHTML += `<h2>cadastro bem sucedido</h2>`;
 
         document.querySelector('#nome').value = "";
         document.querySelector('#email').value = "";
@@ -37,6 +35,7 @@ function cadastrar() {
         document.querySelector('#dt_nasc').value = "";
         document.querySelector('#senha').value = "";
         document.querySelector('#senha_conf').value = "";
-        
+
     }
+    
 }

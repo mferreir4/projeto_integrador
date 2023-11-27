@@ -5,10 +5,10 @@ rg = sessionStorage.rg
 dt_nasc = sessionStorage.dt_nasc
 
 function exibe() {
-if (nome == null || email == null) {
-    window.location.href = "../HTML/index.html"
+//     if (sessionStorage.nome == null || sessionStorage.email == null) {
+//     window.location.href = "../HTML/index.html"
     
-}
+// }
     let info = document.getElementById("info")
     info.innerHTML += `
                         <table class="table">

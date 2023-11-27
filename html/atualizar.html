@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 <header>
-    <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand sizeLogo espacoLeft" href="index.html"><img src="../imagens/logo_new2.png"
                     alt=""></a>
@@ -24,40 +24,33 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " required id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item espaco " required id="btn_navbarV" onmouseout="normal()" onmousemove="moveV()">
+                    <li class="nav-item espaco " id="btn_navbarV" onmouseout="normal()" onmousemove="moveV()">
                         <a class="nav-link active text-primary-emphasis" aria-current="page"
                             href="vacinas.html">Vacinas</a>
                     </li>
-                    <li class="nav-item espaco " required id="btn_navbarCr" onmouseout="normal()"
-                        onmousemove="moveCr()">
+                    <li class="nav-item espaco " id="btn_navbarCr" onmouseout="normal()" onmousemove="moveCr()">
                         <a class="nav-link active text-primary-emphasis" href="carterinha.html">Carteira </a>
                     </li>
-                    <li class="nav-item espaco " required id="btn_navbarCm" onmouseout="normal()"
-                        onmousemove="moveCm()">
+                    <li class="nav-item espaco " id="btn_navbarCm" onmouseout="normal()" onmousemove="moveCm()">
                         <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
                     </li>
-                    <li class="nav-item espaco " required id="btn_navbarCa" onmouseout="normal()"
-                        onmousemove="moveCa()">
-                        <a class="nav-link active text-primary-emphasis" href="cadastro.html">Cadastro </a>
+                    <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
+                        <a class="nav-link active text-primary-emphasis" name="profile"
+                            href="login.html">Login/Cadastro</a>
+
+                        <!-- <a href="" name="meulink">Testando alteração</a> -->
                     </li>
-                    <li class="nav-item espaco " required id="btn_navbarMa" onmouseout="normal()"
-                        onmousemove="moveMa()">
-                        <a class="nav-link active text-primary-emphasis" href="mascote.html">Mascote </a>
+                    <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
+                        <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                    c
+                    <button class="btn btn-outline-light" type="submit">Pesquisar</button>
                 </form>
             </div>
-        </div>
-        <div class="user">
-            <a class="navbar-brand" href="../HTML/login.html">
-                <img class="user_login" required id="login" src="../imagens/pessoa.png" alt="Bootstrap" width="30"
-                    height="24">
-            </a>
         </div>
     </nav>
 </header>

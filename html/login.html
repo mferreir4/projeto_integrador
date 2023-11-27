@@ -13,6 +13,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
     rel="stylesheet">
+
+        <script>
+      if (sessionStorage.email != null && sessionStorage.email != "") {
+        window.location.href="../html/profile.html"
+      }
+      else{
+      }
+
+    </script>
+
 </head>
 <header>
   <nav class="navbar navbar-dark bg-primaryt navbar-expand-lg shadow-sm">
@@ -34,7 +44,9 @@
             <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
           </li>
           <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
-            <a class="nav-link active text-primary-emphasis" href="login.html">Login/Cadastro</a>
+            <a class="nav-link active text-primary-emphasis" name="profile" href="login.html">Login/Cadastro</a>
+
+            <!-- <a href="" name="meulink">Testando alteração</a> -->
           </li>
           <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
             <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
@@ -45,11 +57,6 @@
           <button class="btn btn-outline-light" type="submit">Pesquisar</button>
         </form>
       </div>
-    </div>
-    <div class="user">
-      <a class="navbar-brand" href="../HTML/login.html">
-        <img class="user_login" id="login" src="../imagens/pessoa.png" alt="Bootstrap" width="30" height="24">
-      </a>
     </div>
   </nav>
 </header>
@@ -90,6 +97,17 @@
                     </div>
               </form>
             </div>
+            <div class="row">
+              <div class="col">
+            
+              </div>
+              <div class="col">
+                <div class="col align-self-center " id="info"></div>
+              </div>
+              <div class="col">
+            
+              </div>
+            </div>
     </div>
 </body>
 
@@ -97,5 +115,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <script src="../js/login.js"></script>
-
+<script src="../js/index.js"></script>
 </html>
