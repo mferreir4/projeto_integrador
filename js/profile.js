@@ -36,12 +36,17 @@ function exibe() {
 
 function deletar() {
 
-
-    sessionStorage.removeItem(nome)
-    sessionStorage.removeItem(email)
-    sessionStorage.removeItem(endereco)
-    sessionStorage.removeItem(rg)
-    sessionStorage.removeItem(dt_nasc)
+sessionStorage.clear()
+    // sessionStorage.removeItem(nome)
+    // sessionStorage.removeItem(email)
+    // sessionStorage.removeItem(endereco)
+    // sessionStorage.removeItem(rg)
+    // sessionStorage.removeItem(dt_nasc)
+    console.log(nome)
+    console.log(email)
+    console.log(endereco)
+    console.log(rg)
+    console.log(dt_nasc)
     window.location.reload();
 }
 

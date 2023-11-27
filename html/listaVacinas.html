@@ -34,10 +34,12 @@
             <a class="nav-link active text-primary-emphasis" href="campanhas.html">Campanhas </a>
           </li>
           <li class="nav-item espaco " id="btn_navbarCa" onmouseout="normal()" onmousemove="moveCa()">
-            <a class="nav-link active text-primary-emphasis" href="cadastro.html">Cadastro </a>
+            <a class="nav-link active text-primary-emphasis" name="profile" href="login.html">Login/Cadastro</a>
+
+            <!-- <a href="" name="meulink">Testando alteração</a> -->
           </li>
           <li class="nav-item espaco " id="btn_navbarMa" onmouseout="normal()" onmousemove="moveMa()">
-            <a class="nav-link active text-primary-emphasis" href="mascote.html">Mascote </a>
+            <a class="nav-link active text-primary-emphasis" href="mascote.html">Sobre </a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -46,57 +48,26 @@
         </form>
       </div>
     </div>
-    <div class="user">
-      <a class="navbar-brand" href="../HTML/login.html">
-        <img class="user_login" id="login" src="../imagens/pessoa.png" alt="Bootstrap" width="30" height="24">
-      </a>
-    </div>
   </nav>
 </header>
 
-<body>
-    
+<body onload="vacinas()">
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col centro">
+      <button class="btn btn-outline-primary" type="submit" onclick="exibe()">lista de vacinas</button>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
     <div class="row">
         <div class="col">
-
         </div>
-        <div class="col ">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">vacina</th>
-                        <th scope="col">idade</th>
-                        <th scope="col">fabricante</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>vacina1</td>
-                        <td>1 ano</td>
-                        <td>empresa1</td>
-                    </tr>
-                    <tr>
-                        <td>vacina2</td>
-                        <td>1 ano</td>
-                        <td>empresa2</td>
-                    </tr>
-                    <tr>
-                        <td>vacina3</td>
-                        <td>2 ano</td>
-                        <td>empresa3</td>
-                    </tr>
-                    <tr>
-                        <td>vacina4</td>
-                        <td>5 ano</td>
-                        <td>empresa4</td>
-                    </tr>
-                    <tr>
-                        <td>vacina5</td>
-                        <td>10 ano</td>
-                        <td>empresa5</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="col" id="info">
+        
         </div>
         <div class="col">
 
@@ -108,7 +79,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-<script src="../JS/profile.js"></script>
+<script src="../JS/vacina.js"></script>
 <script src="../js/index.js"></script>
 
 </html>

@@ -84,11 +84,7 @@ img {
     height: 40px;
     width: 40px;
   }
- .principal{
 
-    
-    
- }
  p{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 17px;
@@ -102,4 +98,9 @@ img {
 
 h1{
   font-style: oblique;
+}
+
+.row-form {
+  position: relative;
+  left: -4px;
 }

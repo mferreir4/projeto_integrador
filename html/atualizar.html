@@ -56,79 +56,85 @@
 </header>
 
 <body onload="atualizar()">
-    <form>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col borda m-5">
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-2">
-                                <label for="" class="form-label">Nome Completo</label>
-                                <input type="text" class="form-control" required id="nome">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col pt-2">
-                            <div class="mb-3">
-                                <label for="" class="form-label">RG</label>
-                                <input type="number" class="form-control" required id="rg">
-                            </div>
-                        </div>
-                        <div class="col pt-2">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Data De Nascimento</label>
-                                <input type="date" class="form-control" required id="dt_nasc">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" required id="email">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Endereco</label>
-                                <input type="text" class="form-control" required id="endereco">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="senha" class="form-label">Senha</label>
-                                <input type="password" class="form-control" required id="senha">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Confirme a Senha</label>
-                                <input type="password" class="form-control" required id="senha_conf">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-outline-info" onclick="novo()" type="submit">Enviar</button>
-                </form>
+    <div class="container p-5">
+        <div class="row p-1">
+            <div class="col-3">
+                <img class="mascote mascoteSize" src="../imagens/mascote.png">
             </div>
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col">
+            <div class="col-8 borda2">
+                <h1><u>Atualizar</u></h1>
+                <br>
+                <p>atualize suas informacoes para estar sempre recebendo novas notificacoes</p>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-09 borda textConsul">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-2">
+                                        <label for="" class="form-label">Nome Completo</label>
+                                        <input type="text" class="form-control" required id="nome">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col pt-2">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">RG</label>
+                                        <input type="number" class="form-control" required id="rg">
+                                    </div>
+                                </div>
+                                <div class="col pt-2">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Data De Nascimento</label>
+                                        <input type="date" class="form-control" required id="dt_nasc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" required id="email">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Endereco</label>
+                                        <input type="text" class="form-control" required id="endereco">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="senha" class="form-label">Senha</label>
+                                        <input type="password" class="form-control" required id="senha">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Confirme a Senha</label>
+                                        <input type="password" class="form-control" required id="senha_conf">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-info" onclick="novo()" type="submit">Enviar</button>
+                        </form>
+                        <div class="row">
+                            <div class="col">
 
-            </div>
-            <div class="col">
-                <div class="col align-self-center " required id="info"></div>
-            </div>
-            <div class="col">
+                            </div>
+                            <div class="col">
+                                <div class="col align-self-center " id="info"></div>
+                            </div>
+                            <div class="col">
 
-            </div>
-        </div>
-
-    </form>
+                            </div>
+                        </div>
+                    </div>
 </body>
 <footer>
     <p>&copy; Imuni Brasil Projeto Integrador 2023.</p>

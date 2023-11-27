@@ -42,7 +42,7 @@ function novo() {
         sessionStorage.senha = senha
 
         let info = document.getElementById("info")
-        info.innerHTML += `<h2>cadastro bem sucedido</h2>`
+        info.innerHTML += `<h2>atualizacao bem sucedido</h2>`
 
         document.querySelector('#nome').value = "";
         document.querySelector('#email').value = "";
@@ -51,6 +51,9 @@ function novo() {
         document.querySelector('#dt_nasc').value = "";
         document.querySelector('#senha').value = "";
         document.querySelector('#senha_conf').value = "";
+
+        window.location.href = "../HTML/profile.html"
+
 
     }
 }

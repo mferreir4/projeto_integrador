@@ -16,12 +16,10 @@
 </head>
 
 <script>
-      if (sessionStorage.email == null && sessionStorage.nome == null) {
-          sessionStorage.email = email
-          window.location.href = "../HTML/index.html"
+      if (sessionStorage.email == null || sessionStorage.nome == null) {
         }
         else{
-                    window.location.href = "../HTML/profile.html"
+          window.location.href = "../HTML/profile.html"
         }
 </script>
 <header>
@@ -89,7 +87,7 @@
             <div class="col pt-2">
               <div class="mb-3">
                 <label for="" class="form-label">RG</label>
-                <input type="text" class="form-control" required id="rg">
+                <input type="number" class="form-control" required id="rg">
               </div>
             </div>
             <div class="col pt-2">
