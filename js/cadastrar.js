@@ -35,6 +35,7 @@ function cadastrar() {
         document.querySelector('#dt_nasc').value = "";
         document.querySelector('#senha').value = "";
         document.querySelector('#senha_conf').value = "";
+        window.location.reload();
 
     }
     
